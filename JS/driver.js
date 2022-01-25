@@ -264,7 +264,7 @@ function handleSearch(inputvalue) {
     if(inputvalue){ 
     localStorage.setItem("country", inputvalue)
    
-    window.location.pathname = '/Country_Finder/components/searchpage.html'
+    window.location.href = 'https://shubhambawner.github.io/Country_Finder/components/searchpage.html'
     }
 
 }
