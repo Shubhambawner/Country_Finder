@@ -1,7 +1,10 @@
 import {Data} from "./data.js"
+import {temp} from "../trash.js"
 
 // parameters to be passed to the map: https://developers.google.com/maps/documentation/embed/embedding-map
 var api = "https://en.wikipedia.org/w/api.php?action=query&origin=*&format=json&generator=search&gsrnamespace=0&gsrlimit=35&gsrsearch="
+
+console.log(temp)
 
 
 let frm = document.querySelector("iframe")
