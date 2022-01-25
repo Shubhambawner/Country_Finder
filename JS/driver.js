@@ -264,7 +264,7 @@ function handleSearch(inputvalue) {
     if(inputvalue){ 
     localStorage.setItem("country", inputvalue)
    
-    window.location.pathname = '../components/searchpage.html'
+    window.location.pathname = './components/searchpage.html'
     }
 
 }
