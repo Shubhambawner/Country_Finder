@@ -123,8 +123,10 @@ iframe#map{
     align-content: center;
 }
 .container{
-    position: inherit;
     
+    position: absolute;
+    top: 90vh;
+
 }
 @media screen and (max-width:620px) {
     body{
