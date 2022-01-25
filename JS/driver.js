@@ -13,7 +13,7 @@ let searchBtn = document.querySelector(".search")
 
 let flag = document.querySelector(".flag")
 
-
+//search countries function
 function handleSearch(inputvalue) {
 
     if(inputvalue){ 
@@ -23,9 +23,10 @@ function handleSearch(inputvalue) {
     }
 
 }
+
+//ipdriver is input-based driver function to update the list of countries in search recomendations
 let list = document.querySelector(".list-group")
 function ipdriver(){
-    //console.log("IP DRIVER", input.value)
     list.innerHTML = ""
     
     if(input.value.length>=2){ 
@@ -51,16 +52,13 @@ function ipdriver(){
 input.addEventListener("keyup",()=>{ ipdriver()}, false)
 searchBtn.addEventListener("click",()=>{ handleSearch(input.value)})
 
-function chainer(i){
-   
-}
-
 for (let i in Data) {
 
     if(cList)
     cList.innerHTML+=`<div class="listItem" id=${Data[i]} >${i}</div>`
 }
 
+//make all the countries from list clicable 
 let cv = document.querySelectorAll(".listItem")
 cv.forEach((element)=>{
     element.addEventListener("click",()=>{
